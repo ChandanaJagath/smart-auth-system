@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard — Smart Auth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="dashboard-body">
+    <div class="dash-wrap">
+      <nav class="site-nav" aria-label="Main">
+        <div class="nav-actions">
+          <a href="dashboard.html" class="is-active">Dashboard</a>
+          <a href="admin.html" id="nav-admin" style="display: none">Admin</a>
+        </div>
+        <button type="button" class="btn btn-ghost btn-sm" id="logout-btn-nav" style="width: auto; margin: 0">Logout</button>
+      </nav>
+      <div class="dash-header">
+        <h1>User Dashboard</h1>
+      </div>
+      <div id="dashboard" class="card">
+        <h2>Welcome back</h2>
+        <div id="form-alert" class="alert" role="alert"></div>
+        <div class="user-meta">
+          <p><strong>Name:</strong> <span id="user-name">…</span></p>
+          <p><strong>Email:</strong> <span id="user-email">…</span></p>
+          <p><strong>Role:</strong> <span id="user-role">…</span></p>
+          <p><strong>Verified:</strong> <span id="user-verified">…</span></p>
+          <p><strong>Member since:</strong> <span id="user-created">…</span></p>
+        </div>
+        <button type="button" class="btn btn-ghost" id="logout-btn">Log out</button>
+      </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

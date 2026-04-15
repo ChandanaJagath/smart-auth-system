@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register — Smart Auth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="auth-wrap">
+      <div class="brand">
+        <h1>Smart Auth</h1>
+        <p>Create your account</p>
+      </div>
+      <div class="card">
+        <h2>Register</h2>
+        <div id="form-alert" class="alert" role="alert"></div>
+        <form id="register-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required placeholder="Jane Doe" maxlength="120" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="password-field">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                autocomplete="new-password"
+                required
+                minlength="6"
+                placeholder="At least 6 characters"
+              />
+              <button type="button" class="toggle-password" aria-label="Show password" aria-pressed="false" title="Show password">
+                <span class="toggle-password__icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="btn">Create account</button>
+        </form>
+        <div class="footer-links">
+          Already have an account? <a href="index.html">Sign in</a>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel — Smart Auth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="dashboard-body">
+    <div class="dash-wrap wide">
+      <nav class="site-nav" aria-label="Main">
+        <div class="nav-actions">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="admin.html" class="is-active">Admin</a>
+        </div>
+        <button type="button" class="btn btn-ghost btn-sm" id="admin-logout" style="width: auto; margin: 0">Logout</button>
+      </nav>
+      <div class="dash-header">
+        <h1>Admin Panel</h1>
+      </div>
+      <div id="admin-panel" class="card">
+        <h2>All users</h2>
+        <div id="form-alert" class="alert" role="alert"></div>
+        <div id="admin-table-wrap" class="table-wrap">
+          <table class="data-table" id="users-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Verified</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="users-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
